@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【E宠商城】官网，精选全球宠物用品，品质养宠，尽在E宠 </title>
+    <link rel='alternate' media='only screen and (max-width:640px)' href='#'>
+    <meta name='applicable-device' content='pc'>
+    <meta name="keywords" content="宠物商城,宠物狗,宠物店,宠物用品,宠物网,E宠商城">
+    <meta name="description"
+        content="E宠商城是专业的宠物用品购物平台，专业买手精选全球30000余款好货，超过1000种知名宠物用品品牌，10年累计数百万宠友好评，E宠始终不忘初心，旨为亿万宠友带去更高品质的专业养宠服务。">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/base.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+
+    <script src="lib/js/jquery-1.12.4.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+
+    <script src="lib/js/main.js"></script>
+    <script src="lib/js/axios.min.js"></script>
+    <script src="lib/js/js.cookie.min.js"></script>
+
+</head>
+
+<body>
+    <!-- top -->
+    <div class="headerTop">
+        <div class="w-max">
+            <div class="header_left ">
+                <p class="inBlock"> <i class="glyphicon glyphicon-home green"></i></p>
+                <p class="inBlock"> <a href="index.html" class="epet-index-brand hBlue">E宠首页</a></p>
+                <div class="inBlock city pos-re">
+                    <a href="#" class=""> 送至：<span>重庆</span> <i
+                            class=" green glyphicon glyphicon-menu-down glyphicon-menu"></i>
+                    </a>
+                    <!-- 隐藏部分 -->
+                    <!-- <div class="place-hide" align="left" >
+                                <div class="citys bgwhite">
+                                    <ul class="place-header">
+                                        <li class="title-province current" data-placeid="24" data-parentid="0">重庆</li>
+                                        <li class="title-city" style="display:none;" data-placeid="4974" data-parentid="24">重庆</li>
+                                        <li class="title-area" data-placeid="5115" data-parentid="4974">渝中区</li>
+                                                        <li class="title-high" data-placeid="0" data-parentid="5115"></li>                <li class="title-street" data-placeid="0" data-parentid="0"></li>            </ul>
+                                    <div class="place-content">
+                                        <div class="place-province" data-type="province" style="display: block;">
+                                            <div class="city-conbox bgwhite c666 mt5">
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>华北：</span>
+                                                    <a href="javascript:;" data-placeid="1">北京</a>
+                                                    <a href="javascript:;" data-placeid="2">天津</a>
+                                                    <a href="javascript:;" data-placeid="3">河北</a>
+                                                    <a href="javascript:;" data-placeid="4">山西</a>
+                                                    <a href="javascript:;" data-placeid="5">内蒙古</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>华东：</span>
+                                                    <a href="javascript:;" data-placeid="9">上海</a>
+                                                    <a href="javascript:;" data-placeid="10">江苏</a>
+                                                    <a href="javascript:;" data-placeid="11">浙江</a>
+                                                    <a href="javascript:;" data-placeid="12">安徽</a>
+                                                    <a href="javascript:;" data-placeid="13">福建</a>
+                                                    <a href="javascript:;" data-placeid="15">山东</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>华南：</span>
+                                                    <a href="javascript:;" data-placeid="20">广东</a>
+                                                    <a href="javascript:;" data-placeid="28">广西</a>
+                                                    <a href="javascript:;" data-placeid="21">海南</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>华中：</span>
+                                                    <a href="javascript:;" data-placeid="14">江西</a>
+                                                    <a href="javascript:;" data-placeid="17">河南</a>
+                                                    <a href="javascript:;" data-placeid="18">湖北</a>
+                                                    <a href="javascript:;" data-placeid="19">湖南</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>西南：</span>
+                                                    <a href="javascript:;" data-placeid="24" class="current">重庆</a>
+                                                    <a href="javascript:;" data-placeid="25">四川</a>
+                                                    <a href="javascript:;" data-placeid="26">贵州</a>
+                                                    <a href="javascript:;" data-placeid="27">云南</a>
+                                                    <a href="javascript:;" data-placeid="29">西藏</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>西北：</span>
+                                                    <a href="javascript:;" data-placeid="30">陕西</a>
+                                                    <a href="javascript:;" data-placeid="31">甘肃</a>
+                                                    <a href="javascript:;" data-placeid="32">青海</a>
+                                                    <a href="javascript:;" data-placeid="33">宁夏</a>
+                                                    <a href="javascript:;" data-placeid="34">新疆</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>东北：</span>
+                                                    <a href="javascript:;" data-placeid="6">辽宁</a>
+                                                    <a href="javascript:;" data-placeid="7">吉林</a>
+                                                    <a href="javascript:;" data-placeid="8">黑龙江</a>
+                                                </div>
+                                                <div class="pt10 pl10 pr10 pb5">
+                                                    <span>其他：</span>
+                                                    <a href="javascript:;" data-placeid="22" data-index="2">香港</a>
+                                                    <a href="javascript:;" data-placeid="23" data-index="2">澳门</a>
+                                                    <a href="javascript:;" data-placeid="16">台湾</a>
+                                                    <a href="javascript:;" data-placeid="49574" data-index="2">钓鱼岛</a>
+                                                    <a href="javascript:;" data-placeid="49579" data-index="2">南沙群岛</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="place-city hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                                        <div class="place-area hide city-conbox bgwhite c666 mt5" style="display: none;">    <a href="javascript:;" data-placeid="5115" class="current">渝中区</a>    <a href="javascript:;" data-placeid="5206">北碚区</a>    <a href="javascript:;" data-placeid="6170">巴南区</a>    <a href="javascript:;" data-placeid="6171">南岸区</a>    <a href="javascript:;" data-placeid="49921">渝北区</a>    <a href="javascript:;" data-placeid="49923">沙坪坝</a>    <a href="javascript:;" data-placeid="49946">大渡口区</a>    <a href="javascript:;" data-placeid="49963">九龙坡区</a>    <a href="javascript:;" data-placeid="49974">江北区</a>    <a href="javascript:;" data-placeid="4975">万州区</a>    <a href="javascript:;" data-placeid="5068">涪陵区</a>    <a href="javascript:;" data-placeid="5227">万盛区</a>    <a href="javascript:;" data-placeid="5238">双桥区</a>    <a href="javascript:;" data-placeid="5294">黔江区</a>    <a href="javascript:;" data-placeid="5325">长寿区</a>    <a href="javascript:;" data-placeid="5356">江津区</a>    <a href="javascript:;" data-placeid="5384">合川区</a>    <a href="javascript:;" data-placeid="5416">永川区</a>    <a href="javascript:;" data-placeid="5439">南川区</a>    <a href="javascript:;" data-placeid="5474">綦江县</a>    <a href="javascript:;" data-placeid="5500">潼南县</a>    <a href="javascript:;" data-placeid="5532">铜梁县</a>    <a href="javascript:;" data-placeid="5566">大足县</a>    <a href="javascript:;" data-placeid="5591">荣昌县</a>    <a href="javascript:;" data-placeid="5613">璧山县</a>    <a href="javascript:;" data-placeid="5628">梁平县</a>    <a href="javascript:;" data-placeid="5663">城口县</a>    <a href="javascript:;" data-placeid="5688">丰都县</a>    <a href="javascript:;" data-placeid="5720">垫江县</a>    <a href="javascript:;" data-placeid="5746">武隆县</a>    <a href="javascript:;" data-placeid="5773">忠县</a>    <a href="javascript:;" data-placeid="5816">开县</a>    <a href="javascript:;" data-placeid="5855">云阳县</a>    <a href="javascript:;" data-placeid="5921">奉节县</a>    <a href="javascript:;" data-placeid="5952">巫山县</a>    <a href="javascript:;" data-placeid="5994">巫溪县</a>    <a href="javascript:;" data-placeid="6057">石柱</a>    <a href="javascript:;" data-placeid="6090">秀山</a>    <a href="javascript:;" data-placeid="6123">酉阳</a>    <a href="javascript:;" data-placeid="6163">彭水</a></div>
+                                        <div class="place-high hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                                        <div class="place-street hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                                    </div>
+                                </div>
+                        </div> -->
+                </div>
+                <p class="inBlock"><i class="glyphicon glyphicon-grain green"></i><a href="#" class="cf60"
+                        target="_blank">E宠就是正品</a></p>
+
+            </div>
+            <div class="header_right">
+                <em>
+                    <a href="#" class="hBlue a-log" data-toggle="modal" data-target="#loginModal">[登录]</a>
+                    <a class="hBlue a-exit" data-toggle="modal" data-target="#registerModal">[注册]</a>
+                </em>
+                <a href="myCart.html" class="hBlue">购物车(<em class="cart_num">0</em>) </a>
+                <a href="#" class="hBlue inBlock">
+                    <div class="dropdown inBlock">
+                        <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            我的E宠
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" class="hBlue ft12">我的订单</a></li>
+                            <li><a href="#" class="hBlue ft12">退换货记录</a></li>
+                            <li><a href="#" class="hBlue ft12">我的优惠券</a></li>
+                            <li><a href="#" class="hBlue ft12">我的余额</a></li>
+                            <li><a href="#" class="hBlue ft12">VIP俱乐部</a></li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="hBlue inBlock">
+                    <div class="dropdown hBlue inBlock">
+                        <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            收藏
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" class="hBlue ft12">我的收藏</a></li>
+
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="hBlue">手机版</a>
+                <a href="#" class=" hBlue red">问题反馈</a>
+
+
+
+
+            </div>
+            <!-- login -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="popup login">
+                            <p class="gototitle flex ftc ft18 c333">
+                                <span class="it1 codevar ">手机验证码登录</span>
+                                <span class="liner"></span>
+                                <span class="codevar it1 cf0">账户登录</span></p>
+                            <div class="gotologin_con">
+                                <div>
+                                    <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
+                                        <input type="text" id="username" placeholder="请输入用户名" maxlength="11"
+                                            class="it1">
+                                    </div>
+                                    <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
+                                        <input type="password" id="psd" value="" maxlength="20" placeholder="请输入密码"
+                                            class="it1">
+                                    </div>
+                                    <!---->
+                                </div>
+                                <!---->
+                                <div class=" btnLogin cfff ft14 ftc mt20 codevar">登录</div>
+                                <p class="flex flex-pj flex-ac otherlogin"><span class="loginstype"><a
+                                            href="https://passport.epet.com/Oauth.html?type=4&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                            class="zhifubao"></a> <a
+                                            href="https://passport.epet.com/Oauth.html?type=3&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                            class="weixin"></a> <a
+                                            href="https://passport.epet.com/Oauth.html?type=2&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                            class="QQ"></a></span> <span class="que ft12 c999"><a
+                                            class="mr codevar">手机快速注册</a><span onclick="openSDK()"
+                                            class="codevar">遇到问题？</span></span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- register -->
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="newlogin_con  ">
+                            <!---->
+                            <div class="popup">
+                                <p class="gototitle flex ftc ft18 c333">
+                                    <span class="it1 codevar cf0">新用户注册</span>
+                                    <span class="liner"></span>
+                                    <span class="it1 codevar">直接登录</span>
+                                </p>
+                                <div class="gotoregister_con">
+                                    <div>
+                                        <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
+                                            <input type="text" id="go-username" placeholder="请输入用户名" maxlength="11"
+                                                class="it1">
+                                        </div>
+                                        <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
+                                            <input type="password" id="go-psd" value="" maxlength="20"
+                                                placeholder="请输入密码" class="it1">
+                                        </div>
+
+
+
+
+                                        <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
+                                            <input type="email" id="email" value="" placeholder="请输入邮箱" class="email">
+                                        </div>
+
+                                    </div>
+                                    <div class="bindusergray cfff ft14 ftc mt20 codevar">注册</div>
+                                    <div class="clearfix otherlogin">
+                                        <span class="dib fl argent_ico">
+                                            <input type="radio" checked>
+                                        </span>
+                                        <span class="que ft12 c333 fl ml5 mt5">我同意E宠
+                                            <a href="http://www.epet.com/article37.html" target="_blank"
+                                                class="go_argent ">《用户使用协议》</a></span>
+                                        <span onclick="openSDK()" class="ft12 c999 codevar fr mt5">遇到问题？</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="popup_log">
+                                <p class="gototitle flex ftc ft18 c333">
+                                    <span class="it1 codevar cf0">手机验证码登录</span>
+                                    <span class="liner"></span>
+                                    <span class="codevar it1">账户登录</span></p>
+                                <div class="gotologin_con">
+                                    <div>
+                                        <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
+                                            <input type="text" placeholder="请输入手机号" maxlength="11" class="it1"></div>
+                                        <div class="setting settingcode  pl15 flex flex-pj flex-ac rela"><input
+                                                type="text" placeholder="请输入短信验证码" maxlength="4" class="it1"> <a
+                                                class="ft14 ftc inputcode"><span id="getcodes"
+                                                    class="codevar">获取验证码</span></a>
+                                            <div id="popup-captcha"></div>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <!---->
+                                    <div class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
+                                    <p class="flex flex-pj flex-ac otherlogin"><span class="loginstype"><a
+                                                href="https://passport.epet.com/Oauth.html?type=4&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                                class="zhifubao"></a> <a
+                                                href="https://passport.epet.com/Oauth.html?type=3&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                                class="weixin"></a> <a
+                                                href="https://passport.epet.com/Oauth.html?type=2&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
+                                                class="QQ"></a></span> <span class="que ft12 c999"><a
+                                                class="mr codevar">手机快速注册</a><span onclick="openSDK()"
+                                                class="codevar">遇到问题？</span></span></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- nav -->
+    <div class="head clearfix">
+        <!-- 搜索 -->
+        <div class="w-max ct rel clearfix">
+            <div class="logo">
+                <a class="lo" href="#" title="E宠商城"></a>
+            </div>
+            <form action="" id="schform" class="search fl">
+                <div class="searchBar clearfix">
+                    <input type="search" placeholder="顽皮Wanpy">
+                    <button type="submit">搜索</button>
+                </div>
+                <div class="keywords">
+                    <label>热门搜索：</label>
+                    <a class="cred" href="#; attrid=" target="_blank">海洋之星</a> <span>|</span>
+                    <a href="#" attrid="target=" _blank">比瑞吉</a><span>|</span>
+                    <a href="#" target="_blank">鲜肉粮</a><span>|</span>
+                    <a href="#" attrid="target=" _blank">歪小尾</a><span>|</span>
+                    <a href="#" target="_blank">顽皮</a>
+                </div>
+            </form>
+            <div class="cart">
+                <a href="myCart.html" class="c666">购物车(<em class="cart_num">0</em>)</a>
+            </div>
+        </div>
+        <!--导航...-->
+        <div class="nav">
+            <div class="w-max navBox">
+                <div class="maincates ">
+                    <div class="maincates-title">
+                        <span class="epet-type">
+                            <a href="#">狗狗</a><i></i>
+                        </span>
+                        <span class="hov">商品分类<i></i></span>
+                    </div>
+                    <div id="catefm" class="page-type page-type-details hide ">
+                        <!-- 宠物分类  -->
+                        <div class="pet-cate">
+                            <dl class="pet_dog">
+                                <dd class="p-ph dognow">
+                                    <a href="# onclick=" "><span></span></a>
+                                        <span>
+                                            <p class=" c999"><b class="cstress">18213</b>种精选宝贝</p>
+                                        <a href="#" onclick="" class="p-link">正在狗狗站溜达...</a>
+                                        </span>
+                                        <div class="dogcloth">
+                                            <a href="#" target="_blank">
+                                                <img
+                                                    src="//static.epetbar.com/static_web/pc/src/images/background/dogpack.jpg"></a>
+                                        </div>
+                                </dd>
+                                <dd class="p-mm ">
+                                    <a href="http://cat.epet.com/" onclick="wwwSwith('cat');"><span></span></a>
+                                    <span>
+                                        <p><b class="cstress">9751</b>种精选宝贝</p>
+                                        <a href="http://cat.epet.com/" onclick="wwwSwith('cat');"
+                                            class="p-link">切换到猫猫站</a>
+                                    </span>
+                                    <div class="cat-shatype">
+                                        <a href="https://list.epet.com/3640.html" target="_blank">
+                                            <img
+                                                src="//static.epetbar.com/static_web/pc/src/images/background/catpack.jpg">
+                                        </a>
+                                    </div>
+                                </dd>
+
+                            </dl>
+                        </div>
+                        <!-- 宠物分类 end -->
+
+                        <!-- 商品分类 -->
+                        <div class="catelist cateheader ">
+                            list
+                            <div class="catels boxsha ">二级</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <ul class="menus">
+                    <li class="mns">
+                        <a href="#">
+                            <img src="lib/images/epethk-logo.png" alt="" title="E宠国际">
+                        </a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">品牌特卖</a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">潮品视频</a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">小剧场</a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">E宠课堂</a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">萌爪联盟</a>
+                    </li>
+                    <li class="mns">
+                        <i></i>
+                        <a href="#">清仓特价</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- 商品详情 -->
+    <div class="w-max details">
+        <div class="all-nav ">
+            <div class="pet-onav w-max ct ">
+                <div class="onav-cont">
+                    <span class="c666">狗狗<em class="gnum"></em></span>
+                    <b class="glyphicon glyphicon-menu-down"></b>
+                    <ul class="hide">
+                        <li><a href="http://www.epet.com/">狗狗<em class="gnum"></em></a></li>
+                        <li><a href="http://cat.epet.com/">猫猫<em class="gnum"></em></a></li>
+                    </ul>
+                </div>
+
+                <label>&gt;</label>
+                <div class="onav-cont">
+                    <span class="c666">狗狗美容
+                        <!--<em>667</em>-->
+                    </span>
+                    <b class="glyphicon glyphicon-menu-down"></b>
+                    <ul class="hide">
+                        <li><a href="https://list.epet.com/4334.html">出游洗澡<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/4356.html">清凉消暑<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/5.html">狗狗主粮<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/6.html">狗狗零食<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/53.html">狗狗玩具<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/4315.html">狗狗清洁<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/48.html">狗狗保健<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/49.html">狗狗护理<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/54.html">狗狗生活<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/2652.html">狗狗牵引<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/2651.html">狗狗美容<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/55.html">狗狗服饰<em class="gnum"></em></a></li>
+                    </ul>
+                </div>
+
+                <label>&gt;</label>
+                <div class="onav-cont">
+                    <span class="c666">
+                        梳剪工具 </span>
+                    <b class="glyphicon glyphicon-menu-down"></b>
+                    <ul class="hide">
+                        <li><a href="https://list.epet.com/2653.html">梳剪工具<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/2654.html">护理工具<em class="gnum"></em></a></li>
+                        <li><a href="https://list.epet.com/2655.html">美容配套<em class="gnum"></em></a></li>
+                    </ul>
+                </div>
+
+                <label>&gt;</label>
+                商品详情
+            </div>
+        </div>
+
+        <div class="goods-md-bg clearfix">
+            <!--左侧商品图片 beg-->
+            <div class="goods-left  gdms">
+
+                <div class="goodslogo rela">
+                    <div id="wrap" class="cloud-zoom-wrap"
+                        style="width: 300px; height: 300px; margin-top: 0px; position: relative;">
+                        <a href="#" id="zoom1" class="cloud-zoom rela"
+                            rel="showTitle:false,zoomWidth:500,zoomHeight:380,minWidth:400,minHeight:300,adjustX:-10">
+                            <img alt="146370" src="#">
+                            <div class="cloud-zoom-lens"
+                                style="z-index: 98; position: absolute; width: 187.5px; height: 142.5px; opacity: 0; left: 87px; top: 0px; background-position: -87px 0px;">
+                            </div>
+                        </a>
+                        <div class="mousetrap" style="width: 300px; height: 300px; position: absolute;"></div>
+                        <div class="mousetrap" style="width: 300px; height: 300px; cursor: move; position: absolute;">
+                        </div>
+                        <div class="mousetrap" style="width: 300px; height: 300px; cursor: move; position: absolute;">
+                        </div>
+                        <div id="cloud-zoom-big" class="cloud-zoom-big">
+                        </div>
+                    </div>
+                </div>
+                <div class="picroll mb">
+                    <p class="back" title="上一页"><i></i></p>
+                    <div>
+                        <ul class="oborder" style="width: 336px;">
+                            <li class="">
+                                <a href="#" class="cloud-zoom-gallery gimg" title=""
+                                    rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/goods/sales/20190604112251_674375.jpg@!300w-c'">
+
+                                    <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图1"
+                                        src="https://img2.epetbar.com/goods/sales/20190604112251_674375.jpg@!100w-c">
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!water"
+                                    class="cloud-zoom-gallery gimg" title=""
+                                    rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!300w-c'">
+
+                                    <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图3"
+                                        src="https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!100w-c">
+                                </a>
+                            </li>
+                            <li class="on">
+                                <a href="https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!water"
+                                    class="cloud-zoom-gallery gimg" title=""
+                                    rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!300w-c'">
+
+                                    <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图4"
+                                        src="https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!100w-c">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="next" title="下一页"><i></i></p>
+                </div>
+
+                <div class=" share">
+                    <div class="xq-num "><span class="c999">编号：</span>146370</div>
+                    <div class="xq-share ">
+                        <div class="share-icon real ">
+                            <a><span class="xqico span1 ">分享</span></a>
+                            <div class=" share-div hide" style="width: 250px;height: 40px;">
+                                <!--JiaThis Button BEGIN-->
+                                <div class="jiathis_style">
+                                    <a class="jiathis_button_weixin"></a>
+                                    <a class="jiathis_button_qzone"></a>
+                                    <a class="jiathis_button_tsina"></a>
+                                    <a class="jiathis_button_cqq"></a>
+                                    <a class="jiathis_button_douban"></a>
+                                    <a href="http://www.jiathis.com/share"
+                                        class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"
+                                        target="_blank"></a>
+                                </div>
+                                <!-- JiaThis Button END -->
+                            </div>
+                        </div>
+
+                        <a href="javascript:;" onclick="Epet.Goods.addCollect(146370);"><span
+                                class="xqico span2 mr20">收藏商品</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--左侧商品图片 end-->
+            <!--右侧内容 beg-->
+            <div class="goods-r">
+                <h1 class="gdtitle" id="abcde">日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm </h1>
+                <div class=" desc ">梳理毛发 打造形象</div>
+                <div class="epet-pprice ">
+                    <div data-name="activity_item_normal">
+                        <div class=" market-price clearfix">
+                            <div class=" clearfix">
+                                <span class="c999 fl">
+                                    市场价：
+                                </span>
+                                <del class="c333 fl">¥113.40</del>
+                            </div>
+                        </div>
+                        <div class="clearfix sale-prices">
+
+                            <span class=" span1">E宠价：</span>
+                            <span class=" span2">￥</span>
+                            <span class=" span3 " id="goods-sale-price" data-name="sale_price">
+                                94.50
+                            </span>
+                            <!--VIP专享-->
+                            <div style="display: inline-block"></div>
+                        </div>
+                    </div>
+                    <div data-name="e_plus" class="e-plus ft15"></div>
+                </div>
+
+                <!--促销活动提示-->
+
+                <!--多件优惠、赠品-->
+
+
+                <!--他公益计划提示-->
+
+                <div class="gdtable gdattr gadttrnoBorder ft14  pt10 pb10">
+                    <div class="clearfix">
+                        <div class="ats-style mt5"><span class="c999">已售：</span><span class="ce54649">12</span>把
+                        </div>
+                        <div class="ats-style mt5 ml20"><span class="c999">评价：</span><a
+                                href="http://www.epet.com/review146370.html" target="_blank"><span
+                                    class="c300 ce54649">(5)</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                href="http://www.epet.com/zixun146370.html" target="_blank"><span
+                                    class="c999">咨询：</span><span class="c999 ce54649">(1)</span></a></div>
+                        <div class="ats-style mt5 ml20"><span class="c999">赠送：</span>最多<span class="c78b300">9</span>E宠币
+                        </div>
+                    </div>
+                    <div class="quality-assurance-con ">
+                        <ul class="clearfix">
+                            <li class="fl">
+                                <img src="https://static.epetbar.com/static_wap/appmall/lib/goods/qualityassurance.png"
+                                    alt="">
+                                正品保证 <div class="qa-tc hide">
+                                    <div class="qa-tccon bgwhite">
+                                        <em></em>
+                                        <span class="qa-sj"></span>
+                                        <p>正规授权，所有商品可100%追溯来源。</p>
+                                    </div>
+                                </div>
+                                <!--<p class="abs qa-content hide">正规授权，所有商品可100%追溯来源。</p>-->
+                            </li>
+                            <li class="fl">
+                                <img src="https://static.epetbar.com/static_wap/appmall/lib/goods/freeshipping.png"
+                                    alt="">
+                                99元包邮 <div class="qa-tc hide">
+                                    <div class="qa-tccon bgwhite">
+                                        <em></em>
+                                        <span class="qa-sj"></span>
+                                        <p>单个仓库单笔订单满99包邮（西部大仓覆盖的川渝地区满58元包邮），E宠自营快递覆盖区域满58包邮；不包邮地区：西藏、新疆；不包邮快递：顺丰、EMS；
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--<p class="abs qa-content hide">单个仓库单笔订单满99包邮（西部大仓覆盖的川渝地区满58元包邮），E宠自营快递覆盖区域满58包邮；不包邮地区：西藏、新疆；不包邮快递：顺丰、EMS；</p>-->
+                            </li>
+                            <li class="fl">
+                                <img src="https://static.epetbar.com/static_wap/appmall/lib/goods/thirtydays.png"
+                                    alt="">
+                                30天退货 <div class="qa-tc hide">
+                                    <div class="qa-tccon bgwhite">
+                                        <em></em>
+                                        <span class="qa-sj"></span>
+                                        <p>在不影响该商品二次销售的情况下，自收到商品30天内，可申请退换货服务（定制狗牌、蛋糕等特殊商品除外）。</p>
+                                    </div>
+                                </div>
+                                <!--<p class="abs qa-content hide">在不影响该商品二次销售的情况下，自收到商品30天内，可申请退换货服务（定制狗牌、蛋糕等特殊商品除外）。</p>-->
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!--规格-->
+                <!--数量-->
+                <div class=" norms clearfix ">
+                    <span class="buy-span ">我要买：</span>
+                    <div class="norms-con fl">
+                        <span class="cgnum fl mr">
+                            <span class="chgnum lim-buynum decrement">-</span>
+                            <input type="text" id="cart_buynum" class="text buynum" value="1" size="2">
+                            <span class="chgnum add-buynum increment">+</span>
+                        </span>
+                        <span class="fl mt">把</span>
+                    </div>
+                </div>
+
+                <div class="gdtable sent-city ">
+                    <div class="clearfix">
+                        <div class="fl div-sentcity clearfix rela">
+                            <span class="fl ft14 db c999 mt15">送货至：</span>
+                            <div class="rela goods-place-div fl" data-name="locationPlace">
+                                <div class="rela place-div">
+                                    <div class="rela c666 mt5 place-show bgwhite pointer">
+                                        <div class="clearfix place-str">重庆 渝中区</div>
+                                        <b class=""></b>
+                                    </div>
+                                    <!--隐藏部分-->
+                                    <!-- <div class="place-hide hide" align="left" style="display: none;">
+                    <div class="citys bgwhite">
+                        <ul class="place-header">
+                            <li class="title-province current" data-placeid="24" data-parentid="0">重庆</li>
+                            <li class="title-city" style="display:none;" data-placeid="4974" data-parentid="24">重庆</li>
+                            <li class="title-area" data-placeid="5115" data-parentid="4974">渝中区</li>
+                                            <li class="title-high" data-placeid="0" data-parentid="5115"></li>                <li class="title-street" data-placeid="0" data-parentid="0"></li>            </ul>
+                        <div class="place-content">
+                            <div class="place-province" data-type="province">
+                                <div class="city-conbox bgwhite c666 mt5">
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>华北：</span>
+                                        <a href="javascript:;" data-placeid="1">北京</a>
+                                        <a href="javascript:;" data-placeid="2">天津</a>
+                                        <a href="javascript:;" data-placeid="3">河北</a>
+                                        <a href="javascript:;" data-placeid="4">山西</a>
+                                        <a href="javascript:;" data-placeid="5">内蒙古</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>华东：</span>
+                                        <a href="javascript:;" data-placeid="9">上海</a>
+                                        <a href="javascript:;" data-placeid="10">江苏</a>
+                                        <a href="javascript:;" data-placeid="11">浙江</a>
+                                        <a href="javascript:;" data-placeid="12">安徽</a>
+                                        <a href="javascript:;" data-placeid="13">福建</a>
+                                        <a href="javascript:;" data-placeid="15">山东</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>华南：</span>
+                                        <a href="javascript:;" data-placeid="20">广东</a>
+                                        <a href="javascript:;" data-placeid="28">广西</a>
+                                        <a href="javascript:;" data-placeid="21">海南</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>华中：</span>
+                                        <a href="javascript:;" data-placeid="14">江西</a>
+                                        <a href="javascript:;" data-placeid="17">河南</a>
+                                        <a href="javascript:;" data-placeid="18">湖北</a>
+                                        <a href="javascript:;" data-placeid="19">湖南</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>西南：</span>
+                                        <a href="javascript:;" data-placeid="24" class="current">重庆</a>
+                                        <a href="javascript:;" data-placeid="25">四川</a>
+                                        <a href="javascript:;" data-placeid="26">贵州</a>
+                                        <a href="javascript:;" data-placeid="27">云南</a>
+                                        <a href="javascript:;" data-placeid="29">西藏</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>西北：</span>
+                                        <a href="javascript:;" data-placeid="30">陕西</a>
+                                        <a href="javascript:;" data-placeid="31">甘肃</a>
+                                        <a href="javascript:;" data-placeid="32">青海</a>
+                                        <a href="javascript:;" data-placeid="33">宁夏</a>
+                                        <a href="javascript:;" data-placeid="34">新疆</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>东北：</span>
+                                        <a href="javascript:;" data-placeid="6">辽宁</a>
+                                        <a href="javascript:;" data-placeid="7">吉林</a>
+                                        <a href="javascript:;" data-placeid="8">黑龙江</a>
+                                    </div>
+                                    <div class="pt10 pl10 pr10 pb5">
+                                        <span>其他：</span>
+                                        <a href="javascript:;" data-placeid="22" data-index="2">香港</a>
+                                        <a href="javascript:;" data-placeid="23" data-index="2">澳门</a>
+                                        <a href="javascript:;" data-placeid="16">台湾</a>
+                                        <a href="javascript:;" data-placeid="49574" data-index="2">钓鱼岛</a>
+                                        <a href="javascript:;" data-placeid="49579" data-index="2">南沙群岛</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place-city hide city-conbox bgwhite c666 mt5"></div>
+                            <div class="place-area hide city-conbox bgwhite c666 mt5"></div>
+                            <div class="place-high hide city-conbox bgwhite c666 mt5"></div>
+                            <div class="place-street hide city-conbox bgwhite c666 mt5"></div>
+                        </div>
+                    </div>
+                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--发货信息-->
+                <div class="norms clearfix mt15">
+                    <div class="norms-con fl">
+                        <div class="c999 ft13">
+                            E宠快递15点前下单，其他快递16点前下单，当天发货。
+                            <a href="http://www.epet.com/faq23.html" target="_blank">运费详情&gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix mt20 pt10">
+
+                    <div class="fl addcart-div" id="addcart-div">
+                        <div class="add-buycart ft20 cfff ftc pointer" data-name="addcart-botton"><input id="cart_gid"
+                                type="hidden" value="146370">
+                            <input id="cart_buymode" type="hidden" value="">
+                            <input id="cart_pam" type="hidden" value="">
+                            <input id="cart_pam1" type="hidden" value="">
+                            <input id="cart_extend_pam" type="hidden" value="">
+
+                            <!--替换button-->
+                            <a class=" epet_sensor_add_cart "><span class="cfff">加入购物车</span></a>
+                            <div id="recommend_tips"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--右侧内容 end-->
+
+        </div>
+    </div>
+
+
+
+    <!-- footer start -->
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-imgs ct w-max">
+                <ul class="clearfix">
+                    <li><a href="#" class="zp ft18">正品保障</a></li>
+                    <li><a href="#" class="hh ft18">科学养宠</a></li>
+                    <li><a href="#" class="ck ft18">品类丰富</a></li>
+                    <li><a href="#" class="ps ft18">优质服务</a></li>
+                    <li><a href="#" class="bs ft18">E宠公益</a></li>
+                    <li><a href="#" class="cj ft18">十年同心</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="info clearfix">
+                <div class="footer-phone fl">
+                    <img class="fl mt5 dogphone" src="//static.epetbar.com/www/newFooter/dog_phone.gif">
+                    <div class="footer-number fl">
+                        <h2 class="ft14 c666 bold">售后电话：</h2>
+                        <p class="c666 ft20 mt20">4008889200<span class="ml5 ft12">「免长途费」</span></p>
+                        <p class="c666 ft20 mt20">023-68851700<span class="ml5 ft12"></span></p>
+                        <p class="c444 ft12 mt10">服务时间：09:00--18:30（周一到周日）</p>
+                    </div>
+                </div>
+                <div class="pay-style fl">
+                    <h2 class="ft14 c666 bold">支付方式</h2>
+                    <p class="ft14 c444 mt20"><a href="#">货到付款</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">余额支付</a></p>
+
+                    <p class="ft14 c444 mt5"><a href="#">在线支付</a></p>
+                </div>
+                <div class="peisong-style fl">
+                    <h2 class="ft14 c666 bold">配送方式</h2>
+                    <p class="ft14 c444 mt20"><a href="#">E宠快递</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">外包快递</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">物流运输</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">公司地址</a></p>
+                </div>
+                <div class="shopping-guide fl">
+                    <h2 class="ft14 c666 bold">购物指南</h2>
+                    <p class="ft14 c444 mt20"><a href="#">退换货政策</a></p>
+
+                    <p class="ft14 c444 mt5"><a href="#">常见问题</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">用户协议</a></p>
+
+                </div>
+                <div class="about-us fl">
+                    <h2 class="ft14 c666 bold">关于我们</h2>
+                    <p class="ft14 c444 mt20"><a href="http://www.epet.com/article/about.html">关于我们</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">仓储中心</a></p>
+                    <p class="ft14 c444 mt5"><a href="#">联系我们</a></p>
+
+                    <p class="ft14 c444 mt5"><a href="#" target="_blank" title="应急响应">应急响应</a>
+                    </p>
+                </div>
+                <div class="app-code fl">
+                    <p class="ftc ft12">扫描下载APP</p>
+                    <p class="ftc ft12">下单更优惠</p>
+                    <a href="http://www.epet.com/app.html" target="_blank"><img
+                            src="//static.epetbar.com/www/images/dw2.png?v=10" /></a>
+                </div>
+                <div class="wx-code fl">
+                    <p class="ftc ft12">扫描关注E宠</p>
+                    <p class="ftc ft12">商城微信</p>
+                    <img src="//static.epetbar.com/www/images/app-code.jpg?v=10" />
+                </div>
+
+            </div>
+
+
+            <div class="support ftc">
+                <a href="#" title="12315消费维权"><img src="//static.epetbar.com/www/newFooter/12315.png"
+                        alt="12315消费维权"></a>
+                <a href="#" title="360网站安全"><img src="//static.epetbar.com/www/newFooter/360.png" alt="360网站安全"></a>
+                <a href="#" title="诚信网站"><img src="//static.epetbar.com/www/newFooter/chengxin.png" alt="诚信网站"></a>
+                <a href="#" title="360品牌官网"><img alt="360品牌官网" src="//static.epetbar.com/www/newFooter/shiming.png"></a>
+                <a href="#" title="腾讯安全认证"><img src="//static.epetbar.com/www/newFooter/tx.png" alt="腾讯安全认证"></a>
+                <a href="http://www.315online.com.cn" title="网上交易保障中心"><img alt="网上交易保障中心"
+                        src="//static.epetbar.com/www/newFooter/jybz.png"></a>
+                <a href="#" title="重庆工商"><img alt="重庆工商" src="//static.epetbar.com/www/newFooter/cqgs.png"></a>
+                <span><img src="//static.epetbar.com/www/newFooter/baiq.png" alt="2013年零售价百强企业"></span>
+                <span><img src="//static.epetbar.com/www/newFooter/wsls.png" alt="重庆网商常务理事"></span>
+                <span><img src="//static.epetbar.com/www/newFooter/sfqy.png" alt="重庆电子商务示范企业"></span>
+                <span><img src="//static.epetbar.com/www/newFooter/yxqy.png" alt="重庆优秀互联网信息服务企业"></span>
+                <span><img src="//static.epetbar.com/www/newFooter/bhdw.png" alt="小动物保护支持单位"></span>
+                <span><img src="//static.epetbar.com/www/newFooter/sjws.png" alt="重庆十佳网商第一"></span>
+            </div>
+            <div class="footer-copy">
+                <p class="ftc ft12"><a href="#">渝ICP备10002905号-1</a>&nbsp;&nbsp;<a
+                        href="#">渝ICP备10002905号-3</a>&#12288;<a href="#">营业执照</a>&#12288;<a
+                        href="#">兽药经营许可证</a>&#12288;增值电信业务经营许可证：渝B2-20140042
+                    Copyright &copy; 2007-2019 epet.com &#12288;重庆易宠科技有限公司</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end-->
+
+
+
+    <script>
+   
+        // 获取点击产品的name
+        var obj = location.search.slice(1); // 获取问号之后的值
+        // console.log(obj);
+        pid = obj.split('=')[1];
+        // console.log(pid);
+
+        //详情显示
+        var url = "http://jx.xuzhixiang.top/ap/api/detail.php";
+        axios.get(url, {
+            params: {
+                id: pid
+            }
+        }).then(res => {
+            var data = res.data.data
+            // console.log(data);
+
+            var html_left = ` 
+            <li>
+                <a href="#" class="cloud-zoom-gallery gimg" title="" rel="useZoom:'zoom1', smallImage: '#'">
+                    <img alt="${data.pdesc} 缩略图1" src="${data.pimg}">
+                </a>
+            </li>`;
+            $('.oborder').html(html_left);
+            $('#goods-sale-price').html(data.pprice);
+            $('#abcde').html(data.pname);
+            $('.desc').text(data.pdesc);
+
+
+            // 加减框
+            $('.increment').click(function () {
+                var n = $(this).siblings('.text').val();
+                n++;
+                $(this).siblings('.text').val(n);
+            })
+
+            $('.decrement').click(function () {
+                var n = $(this).siblings('.text').val();
+                if (n == 1) {
+                    return false;
+                }
+                n--;
+                $(this).siblings('.text').val(n);
+            })
+            var num = 1;
+            $('.text').change(function () {
+                var n = $(this).val();
+                console.log(n);
+                $(this).val(n);
+                // localStorage.setItem('')		
+            })
+
+            // 加入购车
+
+            $('.epet_sensor_add_cart').click(function () {
+                num = parseInt($('.text').val());
+                // console.log(num);
+
+                if (!localStorage.getItem('myCart')) {
+
+                    var dataArr = [];
+                    dataArr.push({
+                        id: pid,
+                        pname: data.pname,
+                        pimg: data.pimg,
+                        price: data.pprice,
+                        n: num
+                    })
+                
+                    alert('加入购物车成功')
+                  
+                } else {
+                    var dataJson = localStorage.getItem('myCart')
+                    dataArr = JSON.parse(dataJson);
+                    // console.log(dataArr);
+                    var dataFind = dataArr.find((v) =>
+                        v.id == pid
+                    );
+                    // console.log(dataFind);
+
+                    if (!dataFind) {
+                        dataArr.push({
+                            id: pid,
+                            pname: data.pname,
+                            pimg: data.pimg,
+                            price: data.pprice,
+                            n: num
+                        })
+          
+                        alert('加入购物车成功')
+                     
+                    } else {
+                        var n = parseInt(dataFind.n);
+                        // console.log(n);
+                        n += num;
+                        // console.log(num);
+
+                        dataFind.n = n;
+                  
+                        alert('加入购物车成功')
+                        
+                    }
+
+                }
+                localStorage.setItem('myCart', JSON.stringify(dataArr))
+                getCartSum();
+            })
+
+        })
+    </script>
+
+
+</body>
+
+</html>
