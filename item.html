@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -23,21 +23,24 @@
     <script src="lib/js/axios.min.js"></script>
     <script src="lib/js/js.cookie.min.js"></script>
 
+    <style>
+
+    </style>
 </head>
 
 <body>
     <!-- top -->
     <div class="headerTop">
-        <div class="w-max">
-            <div class="header_left ">
-                <p class="inBlock"> <i class="glyphicon glyphicon-home green"></i></p>
-                <p class="inBlock"> <a href="index.html" class="epet-index-brand hBlue">E宠首页</a></p>
-                <div class="inBlock city pos-re">
-                    <a href="#" class=""> 送至：<span>重庆</span> <i
-                            class=" green glyphicon glyphicon-menu-down glyphicon-menu"></i>
-                    </a>
-                    <!-- 隐藏部分 -->
-                    <!-- <div class="place-hide" align="left" >
+            <div class="w-max">
+                <div class="header_left ">
+                    <p class="inBlock"> <i class="glyphicon glyphicon-home green"></i></p>
+                    <p class="inBlock"> <a href="index.html" class="epet-index-brand hBlue">E宠首页</a></p>
+                    <div class="inBlock city pos-re">
+                        <a href="#" class=""> 送至：<span>重庆</span> <i
+                                class=" green glyphicon glyphicon-menu-down glyphicon-menu"></i>
+                        </a>
+                        <!-- 隐藏部分 -->
+                        <!-- <div class="place-hide" align="left" >
                                 <div class="citys bgwhite">
                                     <ul class="place-header">
                                         <li class="title-province current" data-placeid="24" data-parentid="0">重庆</li>
@@ -116,174 +119,213 @@
                                     </div>
                                 </div>
                         </div> -->
+                    </div>
+                    <p class="inBlock"><i class="glyphicon glyphicon-grain green"></i><a href="#" class="cf60"
+                            target="_blank">E宠就是正品</a></p>
+    
                 </div>
-                <p class="inBlock"><i class="glyphicon glyphicon-grain green"></i><a href="#" class="cf60"
-                        target="_blank">E宠就是正品</a></p>
-
-            </div>
-            <div class="header_right">
-                <em>
-                    <a href="#" class="hBlue a-log" data-toggle="modal" data-target="#loginModal">[登录]</a>
-                    <a class="hBlue a-exit" data-toggle="modal" data-target="#registerModal">[注册]</a>
-                </em>
-                <a href="myCart.html" class="hBlue">购物车(<em class="cart_num">0</em>) </a>
-                <a href="#" class="hBlue inBlock">
-                    <div class="dropdown inBlock">
-                        <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="true">
-                            我的E宠
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#" class="hBlue ft12">我的订单</a></li>
-                            <li><a href="#" class="hBlue ft12">退换货记录</a></li>
-                            <li><a href="#" class="hBlue ft12">我的优惠券</a></li>
-                            <li><a href="#" class="hBlue ft12">我的余额</a></li>
-                            <li><a href="#" class="hBlue ft12">VIP俱乐部</a></li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#" class="hBlue inBlock">
-                    <div class="dropdown hBlue inBlock">
-                        <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="true">
-                            收藏
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#" class="hBlue ft12">我的收藏</a></li>
-
-                        </ul>
-                    </div>
-                </a>
-                <a href="#" class="hBlue">手机版</a>
-                <a href="#" class=" hBlue red">问题反馈</a>
-
-
-
-
-            </div>
-            <!-- login -->
-            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="popup login">
-                            <p class="gototitle flex ftc ft18 c333">
-                                <span class="it1 codevar ">手机验证码登录</span>
-                                <span class="liner"></span>
-                                <span class="codevar it1 cf0">账户登录</span></p>
-                            <div class="gotologin_con">
-                                <div>
-                                    <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
-                                        <input type="text" id="username" placeholder="请输入用户名" maxlength="11"
-                                            class="it1">
-                                    </div>
-                                    <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
-                                        <input type="password" id="psd" value="" maxlength="20" placeholder="请输入密码"
-                                            class="it1">
-                                    </div>
-                                    <!---->
-                                </div>
-                                <!---->
-                                <div class=" btnLogin cfff ft14 ftc mt20 codevar">登录</div>
-                                <p class="flex flex-pj flex-ac otherlogin"><span class="loginstype"><a
-                                            href="https://passport.epet.com/Oauth.html?type=4&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                            class="zhifubao"></a> <a
-                                            href="https://passport.epet.com/Oauth.html?type=3&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                            class="weixin"></a> <a
-                                            href="https://passport.epet.com/Oauth.html?type=2&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                            class="QQ"></a></span> <span class="que ft12 c999"><a
-                                            class="mr codevar">手机快速注册</a><span onclick="openSDK()"
-                                            class="codevar">遇到问题？</span></span></p>
-                            </div>
+                <div class="header_right">
+                    <em>
+                        <a href="#" class="hBlue a-log" data-toggle="modal" data-target="#loginModal">[登录]</a>
+                        <a class="hBlue a-exit" data-toggle="modal" data-target="#registerModal">[注册]</a>
+                    </em>
+                    <i class="glyphicon glyphicon-shopping-cart c71"></i>
+                    <a href="myCart.html" class="hBlue">
+                        购物车(<em class="cart_num">0</em>)
+                    </a>
+                    <a href="#" class="hBlue inBlock">
+                        <div class="dropdown inBlock">
+                            <i class="glyphicon glyphicon-user c71"></i>
+                            <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                我的E宠
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#" class="hBlue ft12">我的订单</a></li>
+                                <li><a href="#" class="hBlue ft12">退换货记录</a></li>
+                                <li><a href="#" class="hBlue ft12">我的优惠券</a></li>
+                                <li><a href="#" class="hBlue ft12">我的余额</a></li>
+                                <li><a href="#" class="hBlue ft12">VIP俱乐部</a></li>
+                            </ul>
                         </div>
-
-                    </div>
+                    </a>
+                    <a href="#" class="hBlue inBlock">
+                        <div class="dropdown hBlue inBlock">
+                            <i class="glyphicon glyphicon-star c71"></i>
+                            <a class=" hBlue dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                收藏
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#" class="hBlue ft12">我的收藏</a></li>
+    
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="hBlue">手机版</a>
+                    <a href="#" class=" hBlue red">问题反馈</a>
+    
+    
+    
+    
                 </div>
-            </div>
-            <!-- register -->
-            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-                        <div class="newlogin_con  ">
-                            <!---->
-                            <div class="popup">
-                                <p class="gototitle flex ftc ft18 c333">
-                                    <span class="it1 codevar cf0">新用户注册</span>
+                <!-- login -->
+                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="popup login">
+                                <p class="gototitle  ">
+                                    <span class="it1 codevar ">手机验证码登录</span>
                                     <span class="liner"></span>
-                                    <span class="it1 codevar">直接登录</span>
-                                </p>
-                                <div class="gotoregister_con">
-                                    <div>
-                                        <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
-                                            <input type="text" id="go-username" placeholder="请输入用户名" maxlength="11"
-                                                class="it1">
-                                        </div>
-                                        <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
-                                            <input type="password" id="go-psd" value="" maxlength="20"
-                                                placeholder="请输入密码" class="it1">
-                                        </div>
-
-
-
-
-                                        <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
-                                            <input type="email" id="email" value="" placeholder="请输入邮箱" class="email">
-                                        </div>
-
-                                    </div>
-                                    <div class="bindusergray cfff ft14 ftc mt20 codevar">注册</div>
-                                    <div class="clearfix otherlogin">
-                                        <span class="dib fl argent_ico">
-                                            <input type="radio" checked>
-                                        </span>
-                                        <span class="que ft12 c333 fl ml5 mt5">我同意E宠
-                                            <a href="http://www.epet.com/article37.html" target="_blank"
-                                                class="go_argent ">《用户使用协议》</a></span>
-                                        <span onclick="openSDK()" class="ft12 c999 codevar fr mt5">遇到问题？</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="popup_log">
-                                <p class="gototitle flex ftc ft18 c333">
-                                    <span class="it1 codevar cf0">手机验证码登录</span>
-                                    <span class="liner"></span>
-                                    <span class="codevar it1">账户登录</span></p>
+                                    <span class="codevar it1 cf0">账户登录</span></p>
                                 <div class="gotologin_con">
                                     <div>
-                                        <div class="setting settinguser pl15 flex flex-ac"><span class="pr10"></span>
-                                            <input type="text" placeholder="请输入手机号" maxlength="11" class="it1"></div>
-                                        <div class="setting settingcode  pl15 flex flex-pj flex-ac rela"><input
-                                                type="text" placeholder="请输入短信验证码" maxlength="4" class="it1"> <a
-                                                class="ft14 ftc inputcode"><span id="getcodes"
-                                                    class="codevar">获取验证码</span></a>
-                                            <div id="popup-captcha"></div>
+                                        <div class="setting settinguser flex-ac">
+                                            <span class="pr10"></span>
+                                            <input type="text" id="username" placeholder="请输入用户名" maxlength="11"
+                                                class="it1">
+                                        </div>
+                                        <div class="setting settingpw  flex-ac">
+                                            <span class="pr10"></span>
+                                            <input type="password" id="psd" value="" maxlength="20" 
+                                            placeholder="请输入密码"
+                                                class="it1">
                                         </div>
                                         <!---->
                                     </div>
                                     <!---->
-                                    <div class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
-                                    <p class="flex flex-pj flex-ac otherlogin"><span class="loginstype"><a
-                                                href="https://passport.epet.com/Oauth.html?type=4&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                                class="zhifubao"></a> <a
-                                                href="https://passport.epet.com/Oauth.html?type=3&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                                class="weixin"></a> <a
-                                                href="https://passport.epet.com/Oauth.html?type=2&amp;returnurl=https%3A%2F%2Fwww.epet.com%2Fcart%2F"
-                                                class="QQ"></a></span> <span class="que ft12 c999"><a
-                                                class="mr codevar">手机快速注册</a><span onclick="openSDK()"
-                                                class="codevar">遇到问题？</span></span></p>
+                                    <div class=" bindusergray btnLogin">登录</div>
+                                    <p class="otherlogin">
+                                        <span class="loginstype">
+                                            <a href="#" class="zhifubao"></a>
+                                            <a href="#" class="weixin"></a>
+                                            <a href="#" class="QQ"></a>
+                                        </span>
+                                        <span class="que ">
+                                            <a class="mr ">手机快速注册 </a>
+                                            <span class="">遇到问题？</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="gotologin_pho ">
+                                        <div>
+                                            <div class="setting settinguser flex-ac">
+                                                <span class="pr10"></span>
+                                                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+                                            </div>
+                                            <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
+                                                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
+                                                <a class="ft14 ftc inputcode">
+                                                    <span id="getcodes" class="codevar">获取验证码</span>
+                                                    </span>
+                                                </a>
+                                                    <div id="popup-captcha"></div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <div class=" bindusergray btnLogin">登录</div>
+                                    <p class="otherlogin">
+                                        <span class="loginstype">
+                                            <a href="#" class="zhifubao"></a>
+                                            <a href="#" class="weixin"></a>
+                                            <a href="#" class="QQ"></a>
+                                        </span>
+                                        <span class="que ">
+                                            <a class="mr ">手机快速注册 </a>
+                                            <span class="">遇到问题？</span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
-
+    
                         </div>
-
+                    </div>
+                </div>
+                <!-- register -->
+                <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+    
+                            <div class="newlogin_con">
+                                <!---->
+                                <div class="popup">
+                                    <p class="gototitle ">
+                                        <span class="it1  cf0">新用户注册</span>
+                                        <span class="liner"></span>
+                                        <span class="it1 ">直接登录</span>
+                                    </p>
+                                    <div class="gotoregister_con ">
+                                        <div>
+                                            <div class="setting settinguser flex flex-ac"><span class="pr10"></span>
+                                                <input type="text" id="new-username" placeholder="请输入用户名" maxlength="11"
+                                                    class="it1">
+                                            </div>
+                                            <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
+                                                <input type="password" id="new-psd" value="" maxlength="20"
+                                                    placeholder="请输入密码" class="it1">
+                                            </div>
+    
+    
+                                            <div class="setting settingpw pl15 flex flex-ac"><span class="pr10"></span>
+                                                <input type="email" id="email" value="" placeholder="请输入邮箱" class="email">
+                                            </div>
+    
+                                        </div>
+                                        <div class="bindusergray btnRegister">注册</div>
+                                        <div class="clearfix otherlogin">
+                                            <span class="dib fl argent_ico">
+                                                <input type="radio" checked>
+                                            </span>
+                                            <span class="que ft12 c333 fl ml5 mt5">我同意E宠
+                                                <a href="http://www.epet.com/article37.html" target="_blank"
+                                                    class="go_argent ">《用户使用协议》</a>
+                                            </span>
+                                            <span class="ft12 c999 codevar fr mt5">遇到问题？</span>
+                                        </div>
+                                    </div>
+                                    <div class="gotologin_con ">
+                                        <div>
+                                            <div class="setting settinguser pl15 flex flex-ac">
+                                                <span class="pr10"></span>
+                                                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+                                            </div>
+                                            <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
+                                                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
+                                                <a class="ft14 ftc inputcode">
+                                                    <span id="getcodes" class="codevar">获取验证码</span>
+                                                    </span>
+                                                </a>
+                                                    <div id="popup-captcha"></div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <div class="bindusergray btnLogin">登录</div>
+                                        <p class="flex flex-pj flex-ac otherlogin">
+                                            <span class="loginstype">
+                                                <a href="#" class="zhifubao"></a>
+                                                <a href="#" class="weixin"></a>
+                                                <a href="#" class="QQ"></a>
+                                            </span>
+                                            <span class="que ft12 c999">
+                                                <a class="mr codevar">手机快速注册</a>
+                                                <span class="codevar">遇到问题？</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+    
     </div>
 
     <!-- nav -->
@@ -295,7 +337,7 @@
             </div>
             <form action="" id="schform" class="search fl">
                 <div class="searchBar clearfix">
-                    <input type="search" placeholder="顽皮Wanpy">
+                    <input type="search" id="search_keyword" autocomplete="off" placeholder="顽皮Wanpy">
                     <button type="submit">搜索</button>
                 </div>
                 <div class="keywords">
@@ -306,43 +348,60 @@
                     <a href="#" attrid="target=" _blank">歪小尾</a><span>|</span>
                     <a href="#" target="_blank">顽皮</a>
                 </div>
+                <div class="searchCont">
+                    <div class="listWrap">
+                        <ul class="list">
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="listSub">
+                    <img src="lib/images/search-db.jpg" alt="">
+                    <p>驱虫药不会选？一键定制驱虫方案！</p>
+                    <a href="#">前往驱虫药不会选？一键定制驱虫方案 &gt;</a>
+                </div>
             </form>
             <div class="cart">
-                <a href="myCart.html" class="c666">购物车(<em class="cart_num">0</em>)</a>
+                <a href="myCart.html" class="c666">
+                    <span><i></i></span>
+                    <p>购物车(<em class="cart_num">0</em>)</p>
+                </a>
             </div>
         </div>
         <!--导航...-->
         <div class="nav">
             <div class="w-max navBox">
-                <div class="maincates ">
+                <div class="maincates item-hide">
                     <div class="maincates-title">
                         <span class="epet-type">
                             <a href="#">狗狗</a><i></i>
                         </span>
                         <span class="hov">商品分类<i></i></span>
                     </div>
-                    <div id="catefm" class="page-type page-type-details hide ">
+                    <div id="catefm" class="page-type page-hide">
                         <!-- 宠物分类  -->
                         <div class="pet-cate">
                             <dl class="pet_dog">
                                 <dd class="p-ph dognow">
-                                    <a href="# onclick=" "><span></span></a>
-                                        <span>
-                                            <p class=" c999"><b class="cstress">18213</b>种精选宝贝</p>
-                                        <a href="#" onclick="" class="p-link">正在狗狗站溜达...</a>
-                                        </span>
-                                        <div class="dogcloth">
-                                            <a href="#" target="_blank">
-                                                <img
-                                                    src="//static.epetbar.com/static_web/pc/src/images/background/dogpack.jpg"></a>
-                                        </div>
+                                    <a href="#"><span></span></a>
+                                    <span>
+                                        <p class="c999">
+                                            <b class="cstress">18213</b>种精选宝贝
+                                        </p>
+                                        <a href="#" class="p-link">正在狗狗站溜达...</a>
+                                    </span>
+                                    <div class="dogcloth">
+                                        <a href="#" target="_blank">
+                                            <img
+                                                src="//static.epetbar.com/static_web/pc/src/images/background/dogpack.jpg"></a>
+                                    </div>
                                 </dd>
                                 <dd class="p-mm ">
-                                    <a href="http://cat.epet.com/" onclick="wwwSwith('cat');"><span></span></a>
+                                    <a href="http://cat.epet.com/"><span></span></a>
                                     <span>
                                         <p><b class="cstress">9751</b>种精选宝贝</p>
-                                        <a href="http://cat.epet.com/" onclick="wwwSwith('cat');"
-                                            class="p-link">切换到猫猫站</a>
+                                        <a href="http://cat.epet.com/" class="p-link">切换到猫猫站</a>
                                     </span>
                                     <div class="cat-shatype">
                                         <a href="https://list.epet.com/3640.html" target="_blank">
@@ -354,12 +413,65 @@
 
                             </dl>
                         </div>
-                        <!-- 宠物分类 end -->
+
 
                         <!-- 商品分类 -->
                         <div class="catelist cateheader ">
-                            list
-                            <div class="catels boxsha ">二级</div>
+                            <div class="dogType">
+                                <ul>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/4334.html" lang="4334">洗澡
+                                            </a> 
+                                            <a href="https://list.epet.com/4356.html" lang="4356">清凉
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/5.html" lang="5">主粮
+                                            </a> 
+                                            <a href="https://list.epet.com/6.html" lang="6">零食
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/53.html" lang="53">玩具
+                                            </a> 
+                                            <a href="https://list.epet.com/4315.html" lang="4315">清洁
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/48.html" lang="48">保健
+                                            </a> 
+                                            <a href="https://list.epet.com/49.html" lang="49">护理
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/54.html" lang="54">生活
+                                            </a> 
+                                            <a href="https://list.epet.com/2652.html" lang="2652">牵引
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                    <li class="">
+                                        <h3>
+                                            <a href="https://list.epet.com/2651.html" lang="2651">美容
+                                            </a> 
+                                            <a href="https://list.epet.com/55.html" lang="55">服饰
+                                            </a> 
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <p class="pet-active pointer">
+                                    <img src="#">正在进行的品牌特卖<a>25</a>
+                                </p>
+                            </div>
                         </div>
 
 
@@ -459,47 +571,25 @@
             <div class="goods-left  gdms">
 
                 <div class="goodslogo rela">
-                    <div id="wrap" class="cloud-zoom-wrap"
-                        style="width: 300px; height: 300px; margin-top: 0px; position: relative;">
-                        <a href="#" id="zoom1" class="cloud-zoom rela"
-                            rel="showTitle:false,zoomWidth:500,zoomHeight:380,minWidth:400,minHeight:300,adjustX:-10">
-                            <img alt="146370" src="#">
-                            <div class="cloud-zoom-lens"
-                                style="z-index: 98; position: absolute; width: 187.5px; height: 142.5px; opacity: 0; left: 87px; top: 0px; background-position: -87px 0px;">
-                            </div>
+                    <div id="wrap" class="cloud-zoom-wrap small_box">
+                        <a href="#" id="zoom1" class="cloud-zoom ">
+                            <img alt="146370" src="">
+
+                            <span class="mask"></span>
+                            <span class="float_layer"></span>
                         </a>
-                        <div class="mousetrap" style="width: 300px; height: 300px; position: absolute;"></div>
-                        <div class="mousetrap" style="width: 300px; height: 300px; cursor: move; position: absolute;">
-                        </div>
-                        <div class="mousetrap" style="width: 300px; height: 300px; cursor: move; position: absolute;">
-                        </div>
-                        <div id="cloud-zoom-big" class="cloud-zoom-big">
-                        </div>
                     </div>
+
+                    <div id="cloud-zoom-big" class="cloud-zoom-big big_box">
+                        <img class="big-img" src="" alt="">
+                    </div>
+
                 </div>
                 <div class="picroll mb">
                     <p class="back" title="上一页"><i></i></p>
                     <div>
-                        <ul class="oborder" style="width: 336px;">
-                            <li class="">
-                                <a href="#" class="cloud-zoom-gallery gimg" title=""
-                                    rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/goods/sales/20190604112251_674375.jpg@!300w-c'">
-
-                                    <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图1"
-                                        src="https://img2.epetbar.com/goods/sales/20190604112251_674375.jpg@!100w-c">
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a href="https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!water"
-                                    class="cloud-zoom-gallery gimg" title=""
-                                    rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!300w-c'">
-
-                                    <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图3"
-                                        src="https://img2.epetbar.com/2015-08/12/16/c119f66bc4a769c965db2b29a13c462c.jpg@!100w-c">
-                                </a>
-                            </li>
-                            <li class="on">
+                        <ul class="oborder">
+                            <!-- <li class="on">
                                 <a href="https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!water"
                                     class="cloud-zoom-gallery gimg" title=""
                                     rel="useZoom:'zoom1', smallImage: 'https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!300w-c'">
@@ -507,14 +597,17 @@
                                     <img alt="日本Petio 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图4"
                                         src="https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg@!100w-c">
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <p class="next" title="下一页"><i></i></p>
                 </div>
 
                 <div class=" share">
-                    <div class="xq-num "><span class="c999">编号：</span>146370</div>
+                    <div class="xq-num ">
+                        <span class="c999">编号：</span>
+                        <span class="pid-num">146370</span>
+                    </div>
                     <div class="xq-share ">
                         <div class="share-icon real ">
                             <a><span class="xqico span1 ">分享</span></a>
@@ -534,8 +627,9 @@
                             </div>
                         </div>
 
-                        <a href="javascript:;" onclick="Epet.Goods.addCollect(146370);"><span
-                                class="xqico span2 mr20">收藏商品</span></a>
+                        <a href="javascript:;" onclick="Epet.Goods.addCollect(146370);">
+                            <span class="xqico span2 mr20">收藏商品</span>
+                        </a>
                     </div>
                 </div>
 
@@ -747,7 +841,7 @@
                     <div class="norms-con fl">
                         <div class="c999 ft13">
                             E宠快递15点前下单，其他快递16点前下单，当天发货。
-                            <a href="http://www.epet.com/faq23.html" target="_blank">运费详情&gt;&gt;</a>
+                            <a href="#" target="_blank">运费详情&gt;&gt;</a>
                         </div>
                     </div>
                 </div>
@@ -877,36 +971,80 @@
 
 
     <script>
-   
-        // 获取点击产品的name
-        var obj = location.search.slice(1); // 获取问号之后的值
-        // console.log(obj);
-        pid = obj.split('=')[1];
-        // console.log(pid);
+        $(function () {
 
-        //详情显示
-        var url = "http://jx.xuzhixiang.top/ap/api/detail.php";
-        axios.get(url, {
-            params: {
-                id: pid
-            }
-        }).then(res => {
-            var data = res.data.data
-            // console.log(data);
+            laodAll();
+            updateSum();
+            addCart();
+            fdj()
+            // search_keyword();
+        });
 
-            var html_left = ` 
-            <li>
-                <a href="#" class="cloud-zoom-gallery gimg" title="" rel="useZoom:'zoom1', smallImage: '#'">
-                    <img alt="${data.pdesc} 缩略图1" src="${data.pimg}">
+
+
+        function laodAll() {
+
+            // 获取点击产品的name
+            var obj = location.search.slice(1); // 获取问号之后的值
+            // console.log(obj);
+            pid = obj.split('=')[1];
+            // console.log(pid);
+            $('.pid-num').text(pid);
+            //详情显示
+            var url = "http://jx.xuzhixiang.top/ap/api/detail.php";
+            axios.get(url, {
+                params: {
+                    id: pid
+                }
+            }).then(res => {
+                var data = res.data.data
+                console.log(data);
+                var html = ` 
+                <li>
+                    <a href="#" class="cloud-zoom-gallery gimg" title="" rel="useZoom:'zoom1', smallImage: ${data.pimg}">
+                        <img alt="${data.pdesc} 缩略图1" src="${data.pimg}">
+                    </a>
+                </li>`;
+                html += ` 
+                <li class="">
+                <a href="#" class="cloud-zoom-gallery gimg" title="">
+                    <img alt=" 粗细排梳 长14.5*宽2.8*针长2.0cm  缩略图4" 
+                    src="https://img2.epetbar.com/2015-08/12/16/dfe56361e8300fa7710e362792139df4.jpg">
                 </a>
-            </li>`;
-            $('.oborder').html(html_left);
-            $('#goods-sale-price').html(data.pprice);
-            $('#abcde').html(data.pname);
-            $('.desc').text(data.pdesc);
+                </li> `;
+                $('.oborder').html(html);
+                $('#goods-sale-price').html(data.pprice);
+                $('#abcde').html(data.pname);
+                $('.desc').text(data.pdesc);
+                // 默认图片显示
+                $('#zoom1 img').attr({
+                    src: data.pimg,
+                    alt: pid
+                });
+                $('.big-img').attr('src', data.pimg);
+
+                // 滑过缩略图显示图片
+                $('.oborder li').eq(0).addClass('on');
+                $('.oborder li').hover(function () {
+                    $(this).addClass('on').siblings().removeClass('on');
+
+                    var src = $(this).children().children('img').attr('src');
+                    // console.log(src);
+                    $('#zoom1 img').attr({
+                        src: src,
+                        alt: pid
+                    });
+                    $('.big-img').attr('src', src);
+                })
+            })
 
 
-            // 加减框
+        };
+
+        // 加减框
+        function updateSum() {
+
+
             $('.increment').click(function () {
                 var n = $(this).siblings('.text').val();
                 n++;
@@ -921,43 +1059,24 @@
                 n--;
                 $(this).siblings('.text').val(n);
             })
-            var num = 1;
+
             $('.text').change(function () {
                 var n = $(this).val();
                 console.log(n);
                 $(this).val(n);
-                // localStorage.setItem('')		
-            })
 
-            // 加入购车
+            });
+        };
 
+        // 加入购车
+        function addCart() {
             $('.epet_sensor_add_cart').click(function () {
                 num = parseInt($('.text').val());
                 // console.log(num);
-
-                if (!localStorage.getItem('myCart')) {
-
-                    var dataArr = [];
-                    dataArr.push({
-                        id: pid,
-                        pname: data.pname,
-                        pimg: data.pimg,
-                        price: data.pprice,
-                        n: num
-                    })
-                
-                    alert('加入购物车成功')
-                  
-                } else {
-                    var dataJson = localStorage.getItem('myCart')
-                    dataArr = JSON.parse(dataJson);
-                    // console.log(dataArr);
-                    var dataFind = dataArr.find((v) =>
-                        v.id == pid
-                    );
-                    // console.log(dataFind);
-
-                    if (!dataFind) {
+                var token = Cookies.get('u-token');
+                if (token) {
+                    if (!localStorage.getItem('myCart')) {
+                        var dataArr = [];
                         dataArr.push({
                             id: pid,
                             pname: data.pname,
@@ -965,28 +1084,136 @@
                             price: data.pprice,
                             n: num
                         })
-          
                         alert('加入购物车成功')
-                     
                     } else {
-                        var n = parseInt(dataFind.n);
-                        // console.log(n);
-                        n += num;
-                        // console.log(num);
+                        var dataJson = localStorage.getItem('myCart')
+                        dataArr = JSON.parse(dataJson);
+                        // console.log(dataArr);
+                        var dataFind = dataArr.find((v) =>
+                            v.id == pid
+                        );
+                        // console.log(dataFind);
 
-                        dataFind.n = n;
-                  
-                        alert('加入购物车成功')
-                        
+                        if (!dataFind) {
+                            dataArr.push({
+                                id: pid,
+                                pname: data.pname,
+                                pimg: data.pimg,
+                                price: data.pprice,
+                                n: num
+                            })
+                            alert('加入购物车成功')
+                        } else {
+                            var n = parseInt(dataFind.n);
+                            console.log(n);
+                            n += num;
+                            // console.log(num);
+
+                            dataFind.n = n;
+                            alert('加入购物车成功')
+                        }
+
                     }
-
+                    localStorage.setItem('myCart', JSON.stringify(dataArr));
+                } else {
+                    alert('请先登录');
                 }
-                localStorage.setItem('myCart', JSON.stringify(dataArr))
-                getCartSum();
+            });
+        }
+
+
+        // 放大镜
+        function fdj() {
+            $(".mask").mouseover(function () {
+                //鼠标移入事件，让放大镜和放大区显示！
+                $(".float_layer").show()
+                $(".big_box").show()
+            })
+            $(".mask").mouseout(function () { //鼠标移出后，放大镜和放大区隐藏
+                $(".float_layer").hide()
+                $(".big_box").hide()
             })
 
-        })
+            $(".mask").mousemove(function (e) {
+                //获得鼠标移上去 mask盒子的实际移动距离  鼠标横纵坐标 - 盒子到坐上边界距离 - 盒子的实际宽高距离的二分之一
+                var l = e.pageX - $(".small_box").offset().left - ($(".float_layer").width() / 2)
+                var t = e.pageY - $(".small_box").offset().top - ($(".float_layer").height() / 2)
+
+
+                //防止小盒子移出边界
+                if (l < 0) {
+                    l = 0
+                }
+                if (l > $(this).width() - $(".float_layer").width()) {
+                    l = $(this).width() - $(".float_layer").width()
+                }
+                if (t < 0) {
+                    t = 0
+                }
+
+                if (t > $(this).height() - $(".float_layer").height()) {
+                    t = $(this).height() - $(".float_layer").height()
+                }
+
+                $(".float_layer").css({
+                    "left": l,
+                    "top": t
+                })
+
+                //求出实际移动距离/小盒子最大移动距离的比例值
+                var pX = l / ($(".mask").width() - $(".float_layer").width())
+                var pY = t / ($(".mask").height() - $(".float_layer").height())
+                $(".big_box img").css({
+                    //获得右边大盒子与大图片的差值 * 比例 达到放大镜效果
+                    "left": -pX * ($(".big_box img").width() - $(".big_box").width()),
+                    "top": -pY * ($(".big_box img").height() - $(".big_box").height())
+                })
+            })
+
+        }
+    
+    
     </script>
+
+      <!-- 搜索关键字 -->
+      <script>
+            var ipt = document.querySelector('#search_keyword');
+            var list = document.querySelector('.list');
+            var listSub = document.querySelector('.listSub');
+            var searchCont = document.querySelector('.searchCont');
+    
+            ipt.oninput = function () {
+                var url = `https://suggest.taobao.com/sug?code=utf-8&q=${this.value}
+                &_ksTS=1557469123525_368&callback=fn&k=1&area=c2c&bucketid=5`;
+                var script = document.createElement('script');
+                script.src = url;
+                document.body.appendChild(script);
+                document.body.removeChild(script);
+            }
+    
+            function fn(data) {
+                // console.log(data);
+                var dataRes = data.result;
+                var dataMagic = data.magic;
+                // console.log(res);
+                var listHtml = ' <li class="o-li">在 <em class="red">特殊栏目</em> 中搜索 &gt;</li>';
+                dataRes.forEach((el, i) => {
+                    listHtml += `<li>${el[0]}</li>`;
+                })
+                searchCont.style.display = 'block';
+                list.innerHTML = listHtml;
+    
+                $('.o-li').hover(function () {
+                    $('.listSub').toggle();
+    
+                })
+    
+                $('.listSub').hover(function () {
+                    $('.listSub').toggle()
+                })
+            }
+       
+       </script>
 
 
 </body>
